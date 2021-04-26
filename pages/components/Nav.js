@@ -55,7 +55,7 @@ export default function Nav() {
 
                     <nav className="flex flex-grow ">
                         <ul className="flex flex-grow justify-end flex-wrap items-center">
-                            <li>
+                            <li className="hidden md:flex md:show">
                                 <a
                                     onClick={() => handleScroll("header")}
                                     className="font-medium focus:outline-none text-gray hover:text-blue-600 transition cursor-pointer ;"

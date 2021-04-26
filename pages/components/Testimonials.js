@@ -15,7 +15,7 @@ export default function Testimonials() {
                         <div className="max-w-3xl mx-auto  flex flex-col items-center">
                             <img
                                 className="relative rounded-full b-red-500 mb-5"
-                                src="/Testimonials-1.jpg"
+                                src="/testimonials-1.jpg"
                                 width="80"
                                 height="80"
                                 alt="Testimonial"
