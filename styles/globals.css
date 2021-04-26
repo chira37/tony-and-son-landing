@@ -1,16 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .btn {
+        @apply font-medium rounded-full focus:outline-none px-4 py-2 text-white bg-blue-500 hover:bg-blue-700 duration-300 ease-in-out transition;
+    }
+
+    .title-1 {
+        @apply text-3xl font-extrabold leading-tight tracking-tighter;
+    }
+
+    .title-2 {
+        @apply text-4xl font-extrabold leading-tight tracking-tighter;
+    }
+
+    @screen md {
+        .title-1 {
+            @apply text-4xl;
+        }
+
+        .title-2 {
+            @apply text-6xl;
+        }
+    }    
+
+}
+
+
+
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+    /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif; */
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
